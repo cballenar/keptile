@@ -1,0 +1,155 @@
+@import "screen.css" screen;
+@import "handheld.css" handheld;
+
+/* CSS Reset Combo
+-------------------------------------------------------------
+	* Author: CWhale
+	* Version: v1.1
+	* Last updated: April 5th, 2011
+	* Description:
+	*   A compilation that combines reset properties, 
+	*   typography, and a grid system.
+	*
+	*   As part of the reset we have included HTML5 support.
+	*   Typography is based on 16px font by 24px line-height.
+	*   Grid system: 960px; 12 columns; 24px margin.
+	*
+	*   This file is a compilation of different files and tutorials
+	*   Thanks to:
+	*		http://css-tricks.com
+	*		http://960.gs
+	*		http://html5rocks.com
+	*
+	*/
+
+
+/* HTML5 Tags
+-----------------------------------------------------------*/
+section, article, header, footer, hgroup, figcaption, figure{display:block}
+
+
+/* Reset
+-----------------------------------------------------------*/
+html,body {height:100%}
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, samp, small, strike, strong, sub, sup, tt, var,b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, hr {margin:0;padding:0;border:0;font-size:100%}
+table{border-collapse:collapse;border-spacing:0}/* tables still need 'cellspacing="0"' in the markup */
+ul{list-style:none inside}
+ol{list-style:decimal inside}
+.clear{clear:both;visibility:hidden;width:0;height:0}
+
+img {color: transparent;font-size: 0;vertical-align: middle;
+	/*For IE. http://css-tricks.com/ie-fix-bicubic-scaling-for-images */
+	-ms-interpolation-mode: bicubic}
+*:focus{outline:none;}
+/* Typography
+-----------------------------------------------------------*/
+body{
+	font:14px/24px sans-serif;
+	color:#333;
+	vertical-align:baseline;
+}
+
+h1,h2,h3,h4,h5,h6,ul,ol,dt,dd{margin-top:12px;}
+p,ul,ol,dt,dd{font-size:14px;line-height:24px;}
+
+h1{line-height:48px;font-family: 'Arial Black'}
+h2,h3{line-height:48px;font-family: 'Arial Black'}
+h4,h5,h6{line-height:24px;font-weight:bold}
+
+h1{font-size:48px}
+h2{font-size:36px}
+h3{font-size:24px}
+h4{font-size:18px}
+h5{font-size:14px}
+h6{font-size:14px;font-style:italic}
+
+a{color:#54802D;text-decoration:none}
+	a:hover{text-decoration:underline}
+	a:visited{color:#54802D}
+
+p{margin-top:12px;}
+
+ul, ol{margin-left:0px}
+
+dt{font-weight:bold;font-style:italic}
+	dd{margin-left:24px}
+
+blockquote {
+	display:block;
+	margin:24px;
+	font-style:italic;
+	text-indent:24px;
+}
+
+	/* fixes line-height problems created by these nested elements */
+	p>strong,p>em,p>code{line-height:0}
+
+	/* Makes browsers agree.
+	  IE + Opera = font-weight: bold.
+	  Gecko + WebKit = font-weight: bolder.
+	*/
+	b,strong{font-weight:bolder}
+
+small{font-size:.8em}
+/* Grid System
+-----------------------------------------------------------*/
+/* forces width of screen */
+.outerWrap,.innerWrap{overflow:auto}
+.outerWrap{min-height:100%;}			/*fills screen*/
+.innerWrap{position:relative}		/*positions content*/
+
+.wrapper{width:960px;margin:0 auto;overflow:auto;}
+
+.col1,.col2,.col3,.col4,.col5,.col6,.col7,.col8,.col9,.col10,.col11,.col12,.col1_b,.col2_b,.col3_b,.col4_b,.col5_b,.col6_b,.col7_b,.col8_b,.col9_b,.col10_b,.col11_b,.col12_b{display:inline;float:left}
+
+	/* 24px margin is too much for narrow columns */
+	.col1,.col2{padding:0 12px 6px} 
+
+	/*larger columns can handle it fine */
+	.col3,.col4,.col5,.col6,.col7,.col8,.col9,.col10,.col11,.col12{padding:0 24px 6px} 
+
+	.col1_b,.col2_b,.col3_b,.col4_b,.col5_b,.col6_b,.col7_b,.col8_b,.col9_b,.col10_b,.col11_b,.col12_b{padding:0} 
+	
+	/* width vary depending on the margins total widths are multiples of 80 */
+	.col1{width:56px}
+	.col2{width:136px}
+	.col3{width:192px}
+	.col4{width:272px}
+	.col5{width:352px}
+	.col6{width:432px}
+	.col7{width:512px}
+	.col8{width:592px}
+	.col9{width:672px}
+	.col10{width:752px}
+	.col11{width:832px}
+	.col12{width:912px}
+
+	.col1_b{width:80px}
+	.col2_b{width:160px}
+	.col3_b{width:240px}
+	.col4_b{width:320px}
+	.col5_b{width:400px}
+	.col6_b{width:480px}
+	.col7_b{width:560px}
+	.col8_b{width:640px}
+	.col9_b{width:720px}
+	.col10_b{width:800px}
+	.col11_b{width:880px}
+	.col12_b{width:960px}
+
+	.alpha{clear:left}
+	.omega{clear:right}
+	
+	/* Clear floated elements */
+	.clearfix:before,.clearfix:after {
+		content: ".";
+		display: block;
+		height: 0; 
+		overflow: hidden;
+	}
+	.clearfix:after {clear: both;}
+	.clearfix {zoom: 1;} /* IE 5.5/6/7 */
+
+/*-----------------------------------------------------------
+----------------------END CSS COMBO--------------------------
+-----------------------------------------------------------*/

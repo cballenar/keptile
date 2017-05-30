@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html class="pageInfo" lang="en" dir="ltr">
+	<head>
+		<title>Keptile</title>
+		<meta name="description" content=" " />
+		<meta name="keywords" content="" />
+		<meta http-equiv="X-UA-Compatible" content="IE=9, IE=8, chrome=1">
+
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+ 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.14/jquery-ui.min.js"></script>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" /> 
+
+		<link rel="stylesheet" media="all" href="css/base.css" /> 
+		<link rel="stylesheet" media="screen" href="css/screen.css" /> 
+		<link rel="stylesheet" media="only screen and (max-width: 1024px)" href="css/handheld.css" /> 
+	</head>
+
+	<body>
+		<div class="kBarWrapper">
+			<div class="kBar">
+				<div class="kbLeft">
+					<a class="kbLink kbHome"  href="#"></a>
+					<div class="kbLoc"><a href="#">Keptile</a></div>
+				</div>
+				<div class="kbRight">
+					<a class="kbLink kbLog"  href="#"></a>
+					<a class="kbLink kbSet"  href="#"></a>
+					<a class="kbLink kbBug"  href="#"></a>
+				</div>
+			</div>
+		</div>
+
+		<div class="outerWrap">
+		<div class="innerWrap">
+			<div class="col2_b">
+			</div>
+			<div class="col"
+				
+
+		</div>
+		</div>
+		<script>
+			$(document).ready(function(){
+				var userVal = "Username"
+				var passVal = "password"
+				$("#ktLogUser").focusin(function(event){
+					if($(this).val() == userVal){
+						$(this).val("");
+					}
+				});
+				$("#ktLogUser").focusout(function(event){
+					if($(this).val() == ""){
+						$(this).val(userVal);
+					}
+				});
+				$("#ktLogPass").focusin(function(event){
+					if($(this).val() == passVal){
+						$(this).val("");
+					}
+				});
+				$("#ktLogPass").focusout(function(event){
+					if($(this).val() == ""){
+						$(this).val(passVal);
+					}
+				});
+			});
+		</script>
+	</body>
+</html>

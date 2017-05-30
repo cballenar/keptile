@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html class="pageCanvas" lang="en" dir="ltr">
+	<head>
+		<title>Keptile</title>
+		<meta name="description" content=" " />
+		<meta name="keywords" content="" />
+		<meta http-equiv="X-UA-Compatible" content="IE=9, IE=8, chrome=1">
+
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+ 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.14/jquery-ui.min.js"></script>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" /> 
+
+		<link rel="stylesheet" media="all" href="css/base.css" /> 
+		<link rel="stylesheet" media="screen" href="css/screen.css" /> 
+		<link rel="stylesheet" media="only screen and (max-width: 1024px)" href="css/handheld.css" /> 
+	</head>
+	<body>
+		<div class="kBarWrapper">
+			<div class="kBar">
+				<div class="kbLeft">
+					<a class="kbLink kbHome"  href="#"></a>
+					<div class="kbLoc"><a href="#">Keptile</a></div>
+				</div>
+				<div class="kbRight">
+					<a class="kbLink kbLog"  href="#"></a>
+					<a class="kbLink kbSet"  href="#"></a>
+					<a class="kbLink kbBug"  href="#"></a>
+				</div>
+			</div>
+		</div>
+		<div class="canvasWrapper">
+			<div class="canvas drag">
+
+				<div class="tileWrapper">
+					<div class="tile t_Keptile drag">Keptile</div>
+				</div>
+				<div class="tileWrapper">
+					<div class="tile t_RugbyMonkey drag">Rugby Monkey</div>
+				</div>
+				<div class="tileWrapper">
+					<div class="tile t_WilHall drag">Wil Hall</div>
+				</div>
+				<div class="tileWrapper">
+					<div class="tile t_Keptile drag">Crunchy Paste</div>
+				</div>
+				<div class="tileWrapper">
+					<div class="tile t_RugbyMonkey drag">crnch.it</div>
+				</div>
+				<div class="tileWrapper">
+					<div class="tile t_WilHall drag">Crunchy Labs</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			$(function() {
+				$( ".tileWrapper" ).draggable({
+					grid: [30,30],
+					handle: "div",
+					containment: ".canvas",
+					stop: function(event, ui) {
+						
+					}
+				});
+			});
+		</script>
+	</body>
+</html>

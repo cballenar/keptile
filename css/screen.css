@@ -1,0 +1,378 @@
+.col25_d,.col33_d,.col50_d,.col66_d,.col75_d,.col100_d{display:inline;float:left}
+.col25_d,.col33_d,.col50_d,.col66_d,.col75_d,.col100_d{padding:0} 
+.col25_d{width:25.00%}
+.col33_d{width:33.33%}
+.col50_d{width:50.00%}
+.col66_d{width:66.66%}
+.col75_d{width:75.00%}
+.col100_d{width:100%}
+
+
+.pageInfo hr{
+	clear:both;
+	padding-bottom:1px;
+	box-shadow:0 -1px 2px #CCC,0 1px 2px #FFF;
+	margin:6px 0 5px;
+}
+.pageCanvas hr{
+	clear:both;
+	height:0;
+	border-top:1px solid #CCC;
+	border-bottom:1px solid #FFF;
+	margin:12px 0 11px;
+}
+
+
+/* Base
+-----------------------------------------------------------*/
+.pageInfo body{background:#F3F3F3 url('../img/bgCnv.png') -5px 3px repeat}
+
+.kLogo{
+	float:left;
+	width:300px;
+	height:84px;
+	margin:0 !important;
+	background:url('../img/logo.png');
+}
+
+/* Form Elements
+-----------------------------------------------------------*/
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="password"],
+textarea{
+	display:block;
+	border:1px solid #CCC;
+	border-radius:3px;
+}
+	input[type="text"]:focus,
+	input[type="email"]:focus,
+	input[type="url"]:focus,
+	input[type="search"]:focus,
+	input[type="password"]:focus,
+	textarea:focus{
+		border:1px solid #666;
+	}
+input[type="submit"],
+input[type="file"]::-webkit-file-upload-button, 
+button{
+	border:1px solid #555;
+	background:#333;
+	color:#DDD;
+	border-radius:3px;
+}
+	input[type="submit"]:focus,
+	input[type="submit"]:hover{
+		background:#666
+	}
+
+input::-webkit-input-placeholder{
+	color:#999;
+}
+
+/* Login
+-----------------------------------------------------------*/
+
+.formLogin{
+	float:right;
+	width:348px;
+	padding:0 3px;
+	margin-top:24px;
+}
+	.formLogin input[type="text"],
+	.formLogin input[type="password"]{
+		float:left;
+		height:18px;
+		width:96px;
+		padding:2px 5px;
+		margin:3px;
+		line-height:18px;
+	}
+	.formLogin input[type="submit"]{
+		float:left;
+		width:108px;
+		height:24px;
+		padding:2px 5px;
+		margin:3px;
+	}		
+	.formLogin .formError{
+		height:18px;
+		line-height:18px;
+		color:red;
+		padding:0 3px;
+		font-size:11px;
+	}
+
+/* Register
+-----------------------------------------------------------*/
+.formReg{
+	
+}
+	.formReg input{
+		width:152px;
+		padding:5px;
+		margin:12px 0;
+	}
+
+
+/* Pricing
+-----------------------------------------------------------*/
+.ktPlans{
+	border-radius:6px;
+	overflow:auto;
+	clear:both;
+	margin:48px 24px;
+}
+	.ktTabCol{float:left}
+	.ktTabCell{padding:6px 12px}
+
+	.ktTabAlpha{width:32%}
+	.ktTabElse{width:17%}
+	.ktTabAlpha .ktTabCell{text-align:left}
+	.ktTabElse .ktTabCell{text-align:center;}
+
+
+	.ktPlans .ktTabHead{
+		background:-webkit-linear-gradient(top, #84B35A 0%,#54802d 100%);
+		color:#F9F9F9;
+		height:48px;
+		text-align:center;
+		font-family:'Arial Black';
+		text-shadow:0px 2px 2px #79A352;
+		border-top:2px solid #E3F0D8;
+		border-bottom:1px solid #79995C;
+	}
+		.ktPlans h3{margin:0;line-height:48px}
+
+	.ktTabBody{
+		border-top:1px solid #FFF;
+		border-bottom:1px solid #FFF;
+	}
+	.ktTabBody .ktTabCell{
+		height:96px;
+		font-size:16px;
+		text-shadow:0px 2px 3px #FFF;
+	}
+		.ktTabAlpha .ktTabBody .ktTabCell{line-height:24px}
+		.ktTabElse .ktTabBody .ktTabCell{font-weight:bold;line-height:96px}
+
+		.ktPlans .ktTabBodyA{background:#EEE}
+		.ktPlans .ktTabBodyB{background:#F6F6F6}
+
+	.ktPlans .ktTabFoot{
+		height:48px;
+		padding:6px 12px;
+		font-size:16px;
+		line-height:48px;
+		font-family:'Arial Black';
+		background:-webkit-linear-gradient(top, #333 25%,#222 75%);
+		color:#EEE;
+		text-shadow:0px 2px 2px #666;
+		border-top:2px solid #666;
+		border-bottom:1px solid #000;
+	}
+.ktTabElse:hover{cursor:pointer}
+.ktTabElse:hover .ktTabHead{background:#639635}
+.ktTabElse:hover .ktTabBodyA{background:#F6F6F6}
+.ktTabElse:hover .ktTabBodyB{background:#FDFDFD}
+.ktTabElse:hover .ktTabFoot{background:#222}
+/* Keptile Bar
+-----------------------------------------------------------*/
+.kBarStatic{height:10px;z-index:1000;position:fixed;width:100%;}
+
+.kBarWrapper{
+	height:30px;
+	width:100%;
+
+	padding:0;
+	margin:0;
+
+	font-size:14px;
+	line-height:30px;
+	color:#DDD;
+	text-shadow: 0px 2px 3px #999;
+
+	background:-webkit-linear-gradient(top, #333 25%,#000 75%);
+	box-shadow:0 2px 3px hsla(0,0%,0%,.3);
+}
+	.kBar{padding:0 6px;overflow:auto}
+	.kbLeft{float:left;width:50%;}
+		.kbLeft .kbLink{float:left}
+	.kbRight{float:right}
+		.kbRight .kbLink{float:right}
+
+	.kbLoc{
+		padding:0 0 0 6px;
+		float:left;
+		font-weight:bold;
+	}
+		.kbLoc a:link{color:#DDD}
+
+	.kbLink:link{
+		display:block;
+		background:none;
+		height:30px;
+		min-width:6px;
+		padding:0 12px;
+	}
+		.kbLink:hover{background:#EEE}
+
+	.kbHome:link,
+	.kbSet:link,
+	.kbBug:link,
+	.kbNew:link,
+	.kbLog:link{width:6px}
+
+	.kbHome:link{background:url('../img/kepBar.png') 0px 0px}
+	.kbSet:link{background:url('../img/kepBar.png') 0px -60px}
+	.kbBug:link{background:url('../img/kepBar.png') -30px 0px}
+	.kbLog:link{background:url('../img/kepBar.png') -30px -60px}
+	.kbNew:link{background:url('../img/kepBar.png') -60px 0px}
+	.kbBack:link{background:url('../img/kepBar.png') -60px -60px}
+	.kbPin:link{background:url('../img/kepBar.png') -90px 0px}
+	.kbPinPushed:link{background:url('../img/kepBar.png') -90px -60px}
+		.kbHome:hover{background:#F6F6F6 url('../img/kepBar.png') 0px -30px}
+		.kbSet:hover{background:#F6F6F6 url('../img/kepBar.png') 0px -90px}
+		.kbBug:hover{background:#F6F6F6 url('../img/kepBar.png') -30px -30px}
+		.kbLog:hover{background:#F6F6F6 url('../img/kepBar.png') -30px -90px}
+		.kbNew:hover{background:#F6F6F6 url('../img/kepBar.png') -60px -30px}
+		.kbBack:hover{background:#F6F6F6 url('../img/kepBar.png') -60px -90px}
+		.kbPin:hover{background:#F6F6F6 url('../img/kepBar.png') -90px -30px}
+		.kbPinPushed:hover{background:#F6F6F6 url('../img/kepBar.png') -90px -90px}
+
+/* Canvas
+-----------------------------------------------------------*/
+.canvasWrapper{
+	height:100%;
+	width:100%;
+	padding:0 0 10px 0;
+	margin:-10px 0 0 0;
+
+	overflow:hidden;
+	position:absolute;
+	z-index:100;
+
+	background:#333 url('../img/bg.png');
+	color:#333;
+}
+	.canvas{
+		width:1000%;
+		height:1000%;
+		padding:24px;
+		background:#EEE url('../img/bgCnv.png') -6px -6px;
+		box-shadow:inset 0 0 10px #999;
+	}
+
+/* Dashboard
+-----------------------------------------------------------*/
+.ktdbWrapper{
+	position:absolute;
+	top:0;
+	left:0;
+	height:100%;
+	padding-top:30px;
+	width:300px;
+	background:#FDFDFD;
+	z-index:900;
+}
+	.ktdb{padding:24px}
+
+		.ktdbZero{}
+			.ktdbZero .ktdb{display:none}
+
+		.ktdbFull{}
+			.ktdbFull .ktDb{width:90%;max-width:1100px;min-width:600px;margin:0 auto}
+
+	.ktdbHide{
+		position:absolute;
+		margin:50% 0 0 100%;
+		height:30px;
+		width:12px;
+		background:url("../img/ktDbHide.png");
+		cursor:pointer;
+	}
+	.ktdbForm{display:none}
+
+	.ktdbHidden{display:none}
+
+	.ktdbWrapper label{
+		font-size:12px;
+		color:#666;
+	}
+
+/* Tiles
+-----------------------------------------------------------*/
+.tileWrapper{
+	padding:6px;
+	z-index:500;
+}
+.tile{
+	width:96px;
+	height:96px;
+	padding:6px;
+
+	position:absolute;
+
+	font-size:14px;
+	line-height:24px;
+	font-weight:700;
+
+	word-wrap:break-word;
+	overflow:hidden;
+
+	border-radius:6px;
+	text-shadow:0 2px 3px hsla(0,0%,100%,.5);
+	box-shadow:
+		1px 1px 3px hsla(0,0%,100%,.5),
+		-1px -1px 2px hsla(0,0%,0%,.15),
+		0px 0px 12px #CCC;
+
+	/* Old browsers */
+	background: #CCCCCC; 
+	/* FF3.6+ */
+	background: 
+		-moz-linear-gradient(top, #D6D6D6 0%, #CCCCCC 100%); 
+	/* Chrome10+,Safari5.1+ */
+	background: 
+		-webkit-linear-gradient(top, #DCDCDC 0%,#CCCCCC 100%); 
+	/* Opera11.10+ */
+	background: 
+		-o-linear-gradient(top, #D6D6D6 0%,#CCCCCC 100%); 
+	/* IE10+ */
+	background: 
+		-ms-linear-gradient(top, #D6D6D6 0%,#CCCCCC 100%); 
+	/* IE6-9 */
+	filter: progid:DXImageTransform.Microsoft.gradient( 
+		startColorstr='#DCDCDC', endColorstr='#CCCCCC',GradientType=0);
+	 /* W3C */
+	 background:linear-gradient(top, #DCDCDC 0%,#CCCCCC 100%)
+}
+	.tile:hover{
+		background: 
+			-webkit-linear-gradient(top, #E9E9E9 0%,#D9D9D9 100%); 
+	}
+
+.tile .tileDrag{
+	display:none;
+	position:absolute;
+	top:0;
+	left:0;
+	height:12px;
+	width:100%;
+	background:url('../img/tileDrag.png') 0px 3px no-repeat;
+	cursor:move;
+}
+	.tile:hover .tileDrag{
+		display:block;
+	}
+
+.elemProject{
+	width:108px;
+	height:108px;
+}
+	.elemProject .tile{
+		width:96px;
+		height:96px;
+	}

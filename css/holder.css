@@ -1,0 +1,40 @@
+/* Reset
+-----------------------------------------------------------*/
+section, article, header, footer, hgroup, figcaption, figure{display:block}
+html,body {height:100%}
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, samp, small, strike, strong, sub, sup, tt, var,b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, hr {margin:0;padding:0;border:0;font-size:100%}
+table{border-collapse:collapse;border-spacing:0}
+img {color: transparent;font-size: 0;vertical-align: middle;-ms-interpolation-mode: bicubic}
+*:focus{outline:none;}
+.outerWrap,.innerWrap{overflow:hidden}
+.outerWrap{min-height:100%;}
+.innerWrap{position:relative}
+/* Keptile Holder
+-----------------------------------------------------------*/
+body{background:#EEE url('../img/bgCnv.png') repeat}
+
+.tile{
+	width:108px;
+	height:108px;
+	padding:6px;
+	margin:0;
+
+	position:relative;
+	z-index:500;
+
+	overflow:visible;
+
+	border-radius:6px;
+	text-shadow:0 2px 3px hsla(0,0%,100%,.5);
+	box-shadow:
+		1px 1px 3px hsla(0,0%,100%,.75),
+		-1px -1px 2px hsla(0,0%,0%,.25);
+}
+
+	.t_Kt{
+		background:#73af3e;
+		background-image:-webkit-linear-gradient(top, #8bbc5f 0%,#54802d 100%)
+	}
+	.t_K{
+		background:#000
+	}

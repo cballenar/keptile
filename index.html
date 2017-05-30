@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html class="pageInfo" lang="en" dir="ltr">
+	<head>
+		<title>Keptile</title>
+		<meta name="description" content=" " />
+		<meta name="keywords" content="" />
+		<meta http-equiv="X-UA-Compatible" content="IE=9, IE=8, chrome=1">
+
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+ 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.14/jquery-ui.min.js"></script>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" /> 
+
+		<link rel="stylesheet" media="all" href="css/base.css" /> 
+		<link rel="stylesheet" media="screen" href="css/screen.css" /> 
+		<link rel="stylesheet" media="only screen and (max-width: 1024px)" href="css/handheld.css" /> 
+	</head>
+	<body>
+		<div class="outerWrap">
+		<div class="innerWrap">
+			<div class="wrapper">
+
+				<div class="col12">
+					<a href="index.html" title="Keptile"><h1 alt="Keptile "class="kLogo"></h1></a>
+					<form class="kLogin">
+							<input id="ktLogUser" type="text" value="Username" name="username"></input>
+							<input id="ktLogPass" type="password" value="password" name="password"></input>
+							<input type="submit" name="submit" value="Log In"></input>
+					</form>
+				</div>
+				<hr />
+				<div class="col6">
+					<img src="img/kt.png" />
+				</div>
+				<div class="col6">
+					<h2>WTF Is This... Keptile?</h2>
+					<p>Keptile is only the most awesome piece of software you've ever seen.</p> 
+					<p>Let Keptile make your life easier...</p>
+				</div>
+				<hr />
+				<center>
+				<div class="col3"><a href="features.html" title="Pricing"><h5>Features</h5></a></div>
+				<div class="col3"><a href="pricing.html" title="Pricing"><h5>Pricing</h5></a></div>
+				<div class="col3"><a href="holder.html" title="Misc"><h5>Misc</h5></a></div>
+				<div class="col3"><a href="canvas.html" title="Sample"><h5>Sample</h5></a></div>
+				</center>
+				<hr />
+				<div class="col4">
+					<img src="img/k1.png" />
+					<center><h4>Project Management</h4></center>
+					<p>Handles multiple projects and allows for collaboration with other users.</p>
+				</div>
+				<div class="col4">
+					<img src="img/k2.png" />
+					<center><h4>Badass Graphic Interface</h4></center>
+					<p>An intuitive graphical interface compatible with desktops, tablets, laptops, and mobile devices.</p>
+				</div>
+				<div class="col4">
+					<img src="img/k3.png" />
+					<center><h4>Dropbox Integration</h4></center>
+					<p>Synchronize it with your dropbox account for more flexibility and productivity.</p>
+				</div>
+			</div>
+		</div>
+		</div>
+		<script>
+			$(document).ready(function(){
+				var userVal = "Username"
+				var passVal = "password"
+				$("#ktLogUser").focusin(function(event){
+					if($(this).val() == userVal){
+						$(this).val("");
+					}
+				});
+				$("#ktLogUser").focusout(function(event){
+					if($(this).val() == ""){
+						$(this).val(userVal);
+					}
+				});
+				$("#ktLogPass").focusin(function(event){
+					if($(this).val() == passVal){
+						$(this).val("");
+					}
+				});
+				$("#ktLogPass").focusout(function(event){
+					if($(this).val() == ""){
+						$(this).val(passVal);
+					}
+				});
+			});
+		</script>
+	</body>
+</html>

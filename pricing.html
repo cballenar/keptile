@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html class="pageInfo" lang="en" dir="ltr">
+	<head>
+		<title>Keptile</title>
+		<meta name="description" content=" " />
+		<meta name="keywords" content="" />
+		<meta http-equiv="X-UA-Compatible" content="IE=9, IE=8, chrome=1">
+
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+ 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.14/jquery-ui.min.js"></script>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" /> 
+
+		<link rel="stylesheet" media="all" href="css/base.css" /> 
+		<link rel="stylesheet" media="screen" href="css/screen.css" /> 
+		<link rel="stylesheet" media="only screen and (max-width: 1024px)" href="css/handheld.css" /> 
+	</head>
+
+	<body>
+		<div class="outerWrap">
+		<div class="innerWrap">
+			<div class="wrapper">
+
+				<div class="col12">
+					<a href="index.html" title="Keptile"><h1 alt="Keptile "class="kLogo"></h1></a>
+					<form class="kLogin">
+							<input id="ktLogUser" type="text" value="Username" name="username"></input>
+							<input id="ktLogPass" type="password" value="password" name="password"></input>
+							<input type="submit" name="submit" value="Log In"></input>
+					</form>
+				</div>
+
+				<hr />
+
+				<div class="ktPlans">
+					<div class="ktTabCol ktTabAlpha">
+						<div class="ktTabCell ktTabHead"><h3>Plans &amp; Pricing</h3></div>
+						<div class="ktTabBody">
+							<div class="ktTabCell ktTabBodyA">
+								<br /><b>Pricing</b> - All our plans include a 30-Day free trial.</div>
+							<div class="ktTabCell ktTabBodyB">
+								<br /><b>Canvases</b> - Each canvas is a different workspace to place new tiles.</div>
+							<div class="ktTabCell ktTabBodyA">
+								<br /><b>Tiles</b> - Tiles are your projects and each will be able to host their own files.</div>
+							<div class="ktTabCell ktTabBodyB">
+								<br /><b>Storage</b> - The more storage you have the more files you can host.</div>
+							<div class="ktTabCell ktTabBodyA">
+								<br /><b>Tilers</b> - Share projects and collaborate with other Tilers.</div>
+						</div>
+						<div class="ktTabCell ktTabFoot"></div>
+					</div>
+					<div class="ktTabCol ktTabElse">
+						<div class="ktTabCell ktTabHead"><h4 class="ktPlanTitle" style="line-height:48px;">Chameleon</h4></div>
+						<div class="ktTabBody">
+							<div class="ktTabCell ktTabBodyA">FREE!</div>
+							<div class="ktTabCell ktTabBodyB">1</div>
+							<div class="ktTabCell ktTabBodyA">5</div>
+							<div class="ktTabCell ktTabBodyB">50 Mb</div>
+							<div class="ktTabCell ktTabBodyA">1</div>
+						</div>
+						<div class="ktTabCell ktTabFoot">Sign Up!</div>
+					</div>
+					<div class="ktTabCol ktTabElse">
+						<div class="ktTabCell ktTabHead"><h4 class="ktPlanTitle" style="line-height:48px;">Cobra</h4></div>
+						<div class="ktTabBody">
+							<div class="ktTabCell ktTabBodyA">$10 mo.</div>
+							<div class="ktTabCell ktTabBodyB">3</div>
+							<div class="ktTabCell ktTabBodyA">25</div>
+							<div class="ktTabCell ktTabBodyB">2 Gb</div>
+							<div class="ktTabCell ktTabBodyA">10</div>
+						</div>
+						<div class="ktTabCell ktTabFoot">Sign Up!</div>
+					</div>
+					<div class="ktTabCol ktTabElse">
+						<div class="ktTabCell ktTabHead"><h4 class="ktPlanTitle" style="line-height:48px;">Raptor</h4></div>
+						<div class="ktTabBody">
+							<div class="ktTabCell ktTabBodyA">$25 mo.</div>
+							<div class="ktTabCell ktTabBodyB">10</div>
+							<div class="ktTabCell ktTabBodyA">100</div>
+							<div class="ktTabCell ktTabBodyB">30 Gb</div>
+							<div class="ktTabCell ktTabBodyA">Unlimited</div>
+						</div>
+						<div class="ktTabCell ktTabFoot">Sign Up!</div>
+					</div>
+					<div class="ktTabCol ktTabElse">
+						<div class="ktTabCell ktTabHead"><h4 class="ktPlanTitle" style="line-height:48px;">Rex</h4></div>
+						<div class="ktTabBody">
+							<div class="ktTabCell ktTabBodyA">$99 mo.</div>
+							<div class="ktTabCell ktTabBodyB">Unlimited</div>
+							<div class="ktTabCell ktTabBodyA">Unlimited</div>
+							<div class="ktTabCell ktTabBodyB">75 Gb</div>
+							<div class="ktTabCell ktTabBodyA">Unlimited</div>
+						</div>
+						<div class="ktTabCell ktTabFoot">Sign Up!</div>
+					</div>
+				</div>
+
+				<hr />
+
+				<div class="col12">
+				
+				</div>
+			</div>
+		</div>
+		</div>
+		<script>
+			$(document).ready(function(){
+				var userVal = "Username"
+				var passVal = "password"
+				$("#ktLogUser").focusin(function(event){
+					if($(this).val() == userVal){
+						$(this).val("");
+					}
+				});
+				$("#ktLogUser").focusout(function(event){
+					if($(this).val() == ""){
+						$(this).val(userVal);
+					}
+				});
+				$("#ktLogPass").focusin(function(event){
+					if($(this).val() == passVal){
+						$(this).val("");
+					}
+				});
+				$("#ktLogPass").focusout(function(event){
+					if($(this).val() == ""){
+						$(this).val(passVal);
+					}
+				});
+			});
+		</script>
+	</body>
+</html>
